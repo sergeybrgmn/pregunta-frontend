@@ -214,7 +214,9 @@ async function stopRecording() {
 }
 
 .modal { position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: grid; place-items: center; }
-.modal-card { background: #fff; padding: 1rem; border-radius: 8px; min-width: 260px; max-width: 90vw; box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
-.modal-body { margin-bottom: 0.75rem; }
-.ok-btn { padding: 0.4rem 0.8rem; }
+.modal-card { background: #fff; padding: 1rem; border-radius: 8px; min-width: 260px; max-width: 90vw; box-shadow: 0 4px 16px rgba(0,0,0,0.2); color: #111; }
+.modal-body { margin-bottom: 0.75rem; color: #111; font-size: 1rem; }
+.ok-btn { padding: 0.5rem 0.9rem; background: #3b82f6; color: #fff; border: 1px solid #3b82f6; border-radius: 6px; cursor: pointer; }
+.ok-btn:hover { background: #2563eb; border-color: #2563eb; }
+.ok-btn:focus { outline: 2px solid #93c5fd; outline-offset: 2px; }
 </style>
