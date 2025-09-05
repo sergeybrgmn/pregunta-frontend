@@ -11,6 +11,9 @@ RUN npm ci
 
 # Copy source code
 COPY . .
+# Clerk key
+ARG VITE_CLERK_PUBLISHABLE_KEY
+ENV VITE_CLERK_PUBLISHABLE_KEY=$VITE_CLERK_PUBLISHABLE_KEY
 
 # Build static assets (will use env vars like VITE_CLERK_PUBLISHABLE_KEY)
 RUN npm run build
